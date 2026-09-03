@@ -94,7 +94,7 @@ const projects = [
             "JavaScript"
         ],
 
-        github: "https://github.com/",
+        github: "https://github.com/smartshivamm",
         demo: "",
         live: true
     },
@@ -113,7 +113,7 @@ const projects = [
             "JavaScript"
         ],
 
-        github: "https://github.com/",
+        github: "https://github.com/smartshivamm",
         demo: "https://shree-furniture.netlify.app/",
         live: true
     }
