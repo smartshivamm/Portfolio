@@ -129,6 +129,24 @@
             <a href="Certificate PDF/Certificate (10).pdf" target="_blank" class="view-btn">View Certificate</a>
         </div>
     </div>
+    <script>
+    const showAllBtn = document.getElementById("showAllBtn");
+    const hiddenCards = document.querySelectorAll(".card:nth-child(n + 7)");
+
+    showAllBtn.addEventListener("click", () => {
+
+        const isHidden = hiddenCards[0].style.display === "" ||
+                         hiddenCards[0].style.display === "none";
+
+        hiddenCards.forEach(card => {
+            card.style.display = isHidden ? "block" : "none";
+        });
+
+        showAllBtn.textContent = isHidden
+            ? "Show Less"
+            : "View All Certificates";
+    });
+</script>
     <div id="footer"></div>
     <script src="/Footer/footer.js"></script>
     <script src="../Nav/navbar.js"></script>
