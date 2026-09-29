@@ -126,6 +126,30 @@ main {
     filter: brightness(1.2);
     box-shadow: 0 0 5px yellow;
 }
+/* Hide certificates after 6th */
+.card:nth-child(n + 7) {
+    display: none;
+}
+
+/* Show All Certificates Button */
+.show-all-btn {
+    display: block;
+    margin: 10px auto 40px;
+    padding: 12px 28px;
+    background: linear-gradient(90deg, #4A6958, #1C1C1C);
+    color: white;
+    border: 1px solid rgba(255, 255, 0, 0.5);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.show-all-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 12px rgba(255, 255, 0, 0.5);
+}
 
 
 @keyframes fadeInUp {
